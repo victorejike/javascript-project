@@ -12,3 +12,5 @@ if (hours > 18) {
 }
 
 console.log(tim);
+
+// problem set 2
