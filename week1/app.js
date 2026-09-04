@@ -27,15 +27,25 @@ let expo = 4;
 let last = expo ** 2;
 console.log(last);
 
-let age = 16;
-if (age <  18) tex = "( warning not to be sold to persons under the age of 18)";
-console.log(tex);
-// this to test the statement logic
-let number = 18;
-age = number(age);
-if (isNAN(age)) {
-    votable = "input is not an number"
-} else {
-    votable = (age < 18) ? "too young": "too old";
+let age = 18;
+let tex = "";
+
+if (age < 18) {
+    tex = "(warning this should not be sold to persons under the age of 18)";
 }
-console.log(age);
+console.log(tex);
+
+let number = 18;
+age = Number(age);
+
+
+let votable;
+
+if (isNaN(age)) {
+    votable = "input is not a number?"
+} else {
+    votable = (age >= 18) ? "too young" : "too old";
+}
+
+console.log("age status", age);
+console.log("votable status", votable);
